@@ -2,9 +2,11 @@
 
 This extension provides code JSON code snippets for the more commonly used queries in the Elasticsearch Query DSL.
 
+For use on `.json` files. 
+
 ## Features
 
-![in action](images/action.gif)
+![in action](https://raw.githubusercontent.com/andricDu/elasticsearch-snippets/master/images/action.gif)
 
 * Filtered query
 * Nested query
