@@ -1,0 +1,95 @@
+{
+	"Filtered Query": {
+		"prefix": "filtered query",
+		"body": [
+			"\"filtered\": {",
+			"\t\"query\": {",
+			"\t\t\"match_all\": {}",
+			"\t},",
+			"\t\"filter\" : {",
+			"\t}",
+			"}"
+		]
+	},
+	"Nested Query": {
+		"prefix": "nested query",
+		"body": [
+			"\"nested\" : {",
+			"\t\"path\" : \"${path:Path to nested doc}\",",
+			"\t\"score_mode\" : \"\",",
+			"\t\"query\" : {}",
+			"}"
+		]
+	},
+	"Bool Query": {
+		"prefix": "bool query",
+		"body": [
+			"\"bool\" : {",
+			"\t\"must\" : {},",
+			"\t\"must_not\" : {},",
+			"\t\"should\" : {}",
+			"}" 
+		]
+	},
+	"Term Query": {
+		"prefix": "term query",
+		"body": [
+			"\"term\" : { \"${field}\" : \"${value}\" }"
+		]
+	},
+	"Range Query": {
+		"prefix": "range query",
+		"body": [
+			"\"range\" : {",
+			"\t\"${field}\" : {",
+			"\t\t\"${param}\" : ${range:0}",
+			"}"
+		]
+	},
+	"Exists Query" : {
+		"prefix": "exists query",
+		"body" : [
+			"\"exists\" : { \"field\" : \"${field_name}\" }"
+		]
+	},
+	"Ids Query" : {
+		"prefix": "ids query",
+		"body" : [
+			"\"ids\" : {",
+			"\t\"type\" : \"${my_type}\",",
+			"\t\"values\" : [\"${values_0}\"]",
+			"}"
+		]
+	},
+	"Match Query - Boolean" : {
+		"prefix": "boolean match query",
+		"body": [
+			"\"match\" : {",
+			"\t\"${file}\" : \"${value}\"",
+			"}" 
+		]
+	},
+	"Common Terms Query" : {
+		"prefix": "common terms",
+		"body": [
+			"\"common\" : {",
+			"\t\"${field}\" : {",
+			"\t\t\"query\" : \"${query_string}\",",
+			"\t\t\"cutoff_frequency\" : \"${freq:0.01}\",",
+			"\t\t\"low_freq_operator\" : \"${op}\"",
+			"\t}",
+			"}"
+		]
+	},
+	"Function Score Query" : {
+		"prefix": "function score",
+		"body": [
+			"\"function_score\": {",
+			"\t\"query\" : {},",
+			"\t\"boost\" : \"boost for the whole query\",",
+			"\t\"functions\" : [],",
+			"\t\"boost_mode\" : \"${mode}\"",
+			"}"
+		]
+	}
+}

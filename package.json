@@ -1,0 +1,21 @@
+{
+    "name": "elasticsearch-snippets",
+    "displayName": "elasticsearch-snippets",
+    "description": "Snippets for Elasticsearch Query DSL",
+    "version": "0.0.1",
+    "publisher": "dandric",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "json",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
