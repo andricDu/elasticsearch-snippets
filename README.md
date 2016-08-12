@@ -21,6 +21,10 @@ This extension provides code JSON code snippets for the more commonly used queri
 
 Initial release.
 
+### License
+
+GPLv3 - See here: [License](https://github.com/andricDu/elasticsearch-snippets/blob/master/LICENSE.md)
+
 ### For more information
 
 * [Elasticsearch Query DSL](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html)
