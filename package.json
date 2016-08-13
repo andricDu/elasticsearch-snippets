@@ -2,7 +2,7 @@
     "name": "elasticsearch-snippets",
     "displayName": "elasticsearch-snippets",
     "description": "Snippets for Elasticsearch Query DSL",
-    "version": "0.0.2",
+    "version": "0.1.0",
     "publisher": "dandric",
     "engines": {
         "vscode": "^1.0.0"
