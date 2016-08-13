@@ -1,6 +1,6 @@
 # elasticsearch-snippets
 
-This extension provides code JSON code snippets for the more commonly used queries in the Elasticsearch Query DSL.
+This extension provides JSON code snippets for the more commonly used queries in the Elasticsearch Query DSL.
 
 For use on `.json` files. 
 
@@ -8,6 +8,7 @@ For use on `.json` files.
 
 ![in action](https://raw.githubusercontent.com/andricDu/elasticsearch-snippets/master/images/action.gif)
 
+#### Queries/Filters
 * Filtered query
 * Nested query
 * Bool query
@@ -19,13 +20,23 @@ For use on `.json` files.
 * Common Terms query
 * Function Score query
 
+#### Aggregations
+* Terms Aggs
+
+
+### 0.0.3
+
+ - Adds aggregations.
+
 ### 0.0.1
 
-Initial release.
+ - Initial release.
 
 ### License
 
 GPLv3 - See here: [License](https://github.com/andricDu/elasticsearch-snippets/blob/master/LICENSE.md)
+
+* Elasticsearch is a trademark of Elasticsearch BV, registered in the U.S. and in other countries.
 
 ### For more information
 

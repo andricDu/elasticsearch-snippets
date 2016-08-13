@@ -91,5 +91,15 @@
 			"\t\"boost_mode\" : \"${mode}\"",
 			"}"
 		]
+	},
+	"Terms Aggregation" : {
+		"prefix": "terms aggs",
+		"body": [
+			"\"aggs\" : {",
+			"\t\"${name}\" : {",
+			"\t\t\"terms\" : { \"field\" : \"${fieldName}\" }",
+			"\t}",
+			"}"
+		]
 	}
 }
