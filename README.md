@@ -22,6 +22,8 @@ For use on `.json` files.
 
 #### Aggregations
 * Terms Aggs
+* Filter Aggs
+* Nested Aggs
 
 
 ### 0.0.3

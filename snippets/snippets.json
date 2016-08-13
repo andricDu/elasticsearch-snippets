@@ -101,5 +101,29 @@
 			"\t}",
 			"}"
 		]
+	},
+	"Filter Aggregation" : {
+		"prefix": "filter aggs",
+		"body": [
+			"\"aggs\" : {",
+			"\t\"${name}\" : {",
+			"\t\t\"filter\" : {},",
+			"\t\t\"aggs\" : {}",
+			"\t}",
+			"}"
+		]
+	},
+	"Nested Aggregation" : {
+		"prefix": "nested aggs",
+		"body": [
+			"\"aggs\" : {",
+			"\t\"${name}\" : {",
+			"\t\t\"nested\" : {",
+			"\t\t\t\"path\" : \"${path to nested doc}\"",
+			"\t\t},",
+			"\t\t\"aggs\" : {}",
+			"\t}",
+			"}"
+		]
 	}
 }
