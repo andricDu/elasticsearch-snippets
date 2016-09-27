@@ -17,8 +17,10 @@ For use on `.json` files.
 * Exists query
 * Ids query
 * Match query (boolean)
+* Multi Match query
 * Common Terms query
 * Function Score query
+* Has Nested Child query
 
 #### Aggregations
 * Terms Aggs
