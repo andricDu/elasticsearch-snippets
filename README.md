@@ -25,6 +25,10 @@ For use on `.json` files.
 * Filter Aggs
 * Nested Aggs
 
+### 0.1.1
+
+ - Adds a multi-match query and has child query.
+
 ### 0.1.0
 
  - Adds aggregations.

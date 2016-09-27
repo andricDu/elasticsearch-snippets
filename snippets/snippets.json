@@ -69,6 +69,15 @@
 			"}" 
 		]
 	},
+	"Multi Match Query" : {
+		"prefix": "multi match query",
+		"body": [
+			"\"multi_match\" : {",
+			"\t\"query\": \"${value}\",",
+			"\t\"fields\": [\"${fields}\"]",
+			"}"
+		]
+	},
 	"Common Terms Query" : {
 		"prefix": "common terms",
 		"body": [
@@ -89,6 +98,16 @@
 			"\t\"boost\" : \"boost for the whole query\",",
 			"\t\"functions\" : [],",
 			"\t\"boost_mode\" : \"${mode}\"",
+			"}"
+		]
+	},
+	"Has Child Query" : {
+		"prefix": "has child query",
+		"body": [
+			"\"has_child\": {",
+			"\t\"type\": \"${type}\",",
+			"\t\"score_mode\": \"${mode}\",",
+			"\t\"query\": {}",
 			"}"
 		]
 	},
